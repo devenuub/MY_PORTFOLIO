@@ -74,6 +74,8 @@
     width: 100%;
 }
 
+/*Sign up button*/
+
 .button{
     display: flex;
     justify-content: center;
@@ -89,15 +91,29 @@
     background: #5A3F37;
     background: -webkit-linear-gradient(to right, #2C7744, #5A3F37); 
     background: linear-gradient(to right, #7bf59f, #008321);
-
     color:#fff;
     transition: all 0.3s ease;
+
+}
+
+
+.button:hover{
+    background-position: 0%, 100%;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #84ffc9, #88527F, #FFFFFF);
+}
+
+.button:hover:after{
+    width: 100%;
+    background-position: 0%, 100%;
+    background: linear-gradient(to right, #84ffc9,  #FFFFFF); 
+    transition: left to right 1.35s;
 }
 
 
 .navbar__links:hover{
     color: #274d2c;
-    transition: all 0.3s ease;
+    transition: left to right 0.3s ease;
 }
 
 @media screen and (max-width: 960px){
