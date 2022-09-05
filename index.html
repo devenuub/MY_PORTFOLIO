@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Website</title>
+<title>DeveNuub</title>
+    <link rel="scrollbar" href="scrollbar.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href= "img/favicon.ico">
     <script src="https://kit.fontawesome.com/e8d010676d.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-  <!--NavBar-->
-  <nav class="navbar">
+    <!--SCROLLBAR SETTINGS-->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+ <!--END OF SCROLLBAR SETTINGS-->
+
+    <!--NavBar-->
+    <nav class="navbar">
     <div class="navbar__container">
         
         <a href="#home" id="navbar__logo"><i class="fa-solid fa-leaf"></i>DEVENUUB </a>
@@ -21,36 +26,45 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
+
         <ul class="navbar__menu">
             <li class="navbar__item">
                 <a href="#home" class="navbar__links" id="home-page">Home</a>
             </li>
+
             <li class="navbar__item">
                 <a href="#about" class="navbar__links" id="about-page">About</a>
             </li>
+            
             <li class="navbar__item">
                 <a href="#services" class="navbar__links" id="services-page">Services</a>
             </li>
+
             <li class="navbar__btn">
                 <a href="#sign-up" class="button" id="signup-page">Sign Up</a>
             </li>
+           
         </ul>
     </div>
   </nav>
     </ul>
   </nav>
+    <!--END OF NAVBAR-->
 
-  <!-- HERO Section -->
+
+    <!-- HERO Section -->
   <div class="hero" id="home">
     <div class="hero__container">
         <a href="#home" id="navbar__logo"><i class="fa-solid fa-leaf fa-5x"></i></a>
 
         <h1 class="hero__heading">Welcome To The <span> NuubHub </span></h1>
         <p class="hero__description">Unlimited Blog By Matvei Cloutier</p>
-        <button class="main__btn"><a href="#">Explore</a></button>
+        <button class="main__btn"><a href="#">EXPLORE</a></button>
     </div>
   </div>
+    <!--END OF HERO SECTION-->
 
+    
   <!--About section-->
   <div class="main" id="about">
    <div class="main__container">
@@ -58,16 +72,159 @@
         <div class="main__img--card"><i class="fa-solid fa-leaf fa-4x"></i>DEVENUUB </div>  
     </div>
     <div class="main__content">
-        <h1>About Matvei Cloutier</h1>
-        <h2>Sous Chef Turned Self Taught Programmer</h2>
+        <h1>Matvei Cloutier</h1>
+
+        <h2>WEB AND SOFTWARE DEVELOPMENT</h2>
+
         <p>
-           In all honesty, i'm no smarter than you. I am however, Determined to get the best life Possible with the power of my brain and will power
+            MY NAME IS MATVEI CLOUIER, I AM A SOUS CHEF TURNED SOFTWARE DEVELOPER AS OF _______. WELCOME TO MY BLOG! EVERYTHING YOU SEE HERE HAS BEEN INPUT COMPLETELY BY HAND, ALTHOUGH BY TUTORIAL AS WELL
         </p>
-        <button class="main__btn"><a href="#">Ring Me</a></button>
+        <button class="main__btn"><a href="#">SERVICES</a></button>
     </div>
 </div>
- 
-</div>  <script src="app.js"></script>
+ <!--END OF ABOUT SECTION-->
 
+ <!--BEGINING OF SERVICES SECTION-->
+ <div class="services" id="services">
+
+    <h1>My Services</h1>
+
+    <div class="services__wrapper">
+
+            <div class="services__card">
+            <h2>Custom Website Design</h2>
+            <p> Template Design Consultation</p>
+            <div class="services__btn"><button>GET STARTED</button></div>
+            </div>    
+                
+            <div class="services__card">
+            <h2>Features and Add-ons</h2>
+            <p>Front End Design Features and Cosmetics</p>
+            <div class="services__btn"><button>GET STARTED</button></div>
+            </div>
+
+            <div class="services__card">
+            <h2>Effects Designs</h2>
+            <p>Visual Effects and Sounds</p>
+            <div class="services__btn"><button>GET STARTED</button></div>
+            </div>    
+
+            <div class="services__card">
+            <h2>Custom Website Design</h2>
+            <p> productivity by 50%!</p>
+            <div class="services__btn"><button>GET STARTED</button></div>
+        </div>
+    </div>
+ </div>
+ <!--END OF SERVICES SECTION-->
+
+
+  <!-- FEATURES SECTION -->
+  <div class="main" id="sign-up">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Join Us!</h1>
+            <h2>DeveNuub Programmers Blog</h2>
+            <p>Follow me if youre interested in coding principles and more!</p>
+            <button class="main__btn"><a href="#">Sign Up</a></button>
+        </div>
+     <div class="main__img--container">
+         <div class="main__img--card"><i class="fa-solid fa-box fa-9x"></i>DEVENUUB </div>  
+     </div>
+     
+ </div>
+  <!-- END OF FEATURES SECTION -->
+
+  <!-- FOOTER SECTION -->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How It Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms Of Services</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How It Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms Of Services</a>
+            </div>
+            </div>
+
+            <div class="footer__link--wrapper"></div>
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How It Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms Of Services</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How It Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms Of Services</a>
+            </div>
+            </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="fa-solid fa-leaf fa-3x"></div>
+             <a href="/" id="footer__logo" ></a>
+           </div>
+           <p class="website__rights">Ⓒ DEVENUUB 2020. All Rights Reverved</p>
+        </div>
+           <div class="social__icons">
+            <a href="https://www.facebook.com/DeveNuub/" class="social__icon--link"
+             target="_blank"
+             ><i class="fab fa-facebook fa-5x"></i
+            ></a>
+
+            <a href="https://www.instagram.com/devenuub/" class="social__icon--link"
+            target="_blank"
+              ><i class="fab fa-instagram fa-5x"></i
+            ></a>
+
+            <a href="https://twitter.com/MatveiCloutier" class="social__icon--link"
+             target="_blank"
+              ><i class="fab fa-twitter fa-5x"></i
+            ></a>
+
+            <a href="https://www.linkedin.com/in/matvei-c-892a73243/" class="social__icon--link"
+            target="_blank"
+              ><i class="fab fa-linkedin fa-5x"></i
+            ></a> 
+
+            
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  <!-- END OF FOOTER SECTION  -->
+
+
+
+    <!--BEGINING OF  RUN JS APP I THINK-->
+</div>  <script src="app.js"></script>
+<script type="text/javascript">
+
+   
+
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight -
+        window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight)
+            * 100;
+        progress.style.height = progressHeight + "%";
+    }
+
+</script>
 </body>
 </html>
