@@ -639,11 +639,11 @@ background: linear-gradient(to right, #B5AC49, #7bf59f);
 
  @keyframes animate
  {
-     0%, 50%
+     0%, 100%
      {
          filter: hue-rotate(0deg);
      }
-     100%
+     50%
      {
          filter: hue-rotate(360deg);
      }
