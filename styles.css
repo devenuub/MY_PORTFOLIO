@@ -592,6 +592,10 @@ background: linear-gradient(to right, #B5AC49, #7bf59f);
     justify-content: center
     
 }
+
+.social__icons:hover {
+    color:rgb(255, 118, 175);
+}
 /* END OF FOOTER SECTION */
 
 
@@ -612,7 +616,7 @@ background: linear-gradient(to right, #B5AC49, #7bf59f);
  ::-webkit-scrollbar
  {
      width: 0;
-     
+     max-height: 100%;
  }
 
  #scrollPath
