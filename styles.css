@@ -196,7 +196,7 @@
      }
 
      .navbar__btn{
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
     }
 
  .button{
@@ -290,7 +290,7 @@
      background-size: 100%;
      -webkit-background-clip: text;
      -moz-background-clip: text;
-     -webkit-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent; /* TRANSPARENCY */
      -moz-text-fill-color: transparent;
  
  }
