@@ -1,0 +1,34 @@
+/* Styles for desktop and larger screens */
+.pkmn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pkmnvid {
+    height: auto;
+    width: 50%;
+}
+
+.pkmn-tale {
+    display: block;
+    margin: 10%;
+}
+
+/* Styles for mobile and smaller screens */
+@media (max-width: 768px) {
+    .pkmn-container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        height: auto; /* Adjust height to fit content */
+    }
+
+    .pkmnvid {
+        width: 80%; /* Make the video take full width on mobile */
+        height: auto; /* Let the video scale proportionally */
+    }
+
+    .pkmn-tale {
+        margin: 5% 10%; /* Reduce the margin on mobile for better spacing */
+    }
+}

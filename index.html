@@ -3,238 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-<title>DeveNuub</title>
- <link rel="stylesheet" href="styles.css">
- 
-    <link rel="icon" type="image/x-icon" href= "img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e8d010676d.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script>
+        // Scroll to the top of the page on page load
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <title>DeveNuub</title>
 </head>
 <body>
-    <!--SCROLLBAR SETTINGS-->
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
- <!--END OF SCROLLBAR SETTINGS-->
 
-    <!--NavBar-->
-<nav class="navbar">
-    <div class="navbar__container">
-        
-        <a href="#home" id="navbar__logo"><i class="fa-solid fa-leaf"></i>DEVENUUB<i class="fa-solid fa-leaf"></i></a>
-        
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav class="navbar">
+        <div class="navbar__container"> 
+            <a href="#" id="navbar__logo"><i class="fa-solid fa-leaf"></i>DEVENUUB<i class="fa-solid fa-leaf"></i></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup-page">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="#home" class="navbar__links" id="home-page">Home</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="#about" class="navbar__links" id="about-page">About</a>
-            </li>
-            
-            <li class="navbar__item">
-                <a href="#services" class="navbar__links" id="services-page">Services</a>
-            </li>
-
-            <li class="navbar__btn">
-                <a href="#sign-up" class="button" id="signup-page">Sign Up</a>
-            </li>
-           
-        </ul>
-    </div>
-</nav>
-  
-  
-    <!--END OF NAVBAR-->
-
-
-    <!-- HERO Section -->
-  <div class="hero" id="home">
-    <div class="hero__container">
-        <a href="#home" id="navbar__logo"><i class="fa-solid fa-leaf fa-5x"></i></a>
+       <!-- Modal -->
+       <div id="myModal" class="modal">
         
-        <h1 class="hero__heading">Welcome To The <span> DeveDome! </span></h1>
-        <p class="hero__description">Unlimited Blog By Matvei Cloutier</p>
-        <button class="main__btn"><a href="#">EXPLORE</a></button>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <label for="subject">Subject: <img class="sub" src="./img/sub.gif" alt=""></label>
+                <input type="text" id="subject" name="subject" required autocomplete="off"><br>
+                <label for="email">Email: <img class="ema" src="./img/ema.gif"></label>
+                <input type="email" id="email" name="email" required autocomplete="off"><br>
+                <label for="phone">Phone: <img class="pho" src="./img/pho.gif" alt=""></label>
+                <input type="tel" id="phone" name="phone" required autocomplete="off"><br>
+                <label for="message">Message: <img class="mes" src="./img/mes.gif" alt=""></label>
+                <textarea id="message" name="message" required autocomplete="off"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            
+            
+        </div>
+    </div>
+    
+    <div class="title-container" id="title">
+        <img src="img/MotionLogo.gif" alt="" class="title">
+        <p class="quote">All Animations On This Website Are Produced </p>
+            By Matvei Cloutier <br>
+            Via Adobe Animate
+            <img class="anim" src="./img/anim.gif" alt="">
+        </p>
+        
+        <div class="icon-row">
+          <a class="icons" href="http://www.instagram.com/devenuub/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="icons" href="http://www.facebook.com/Devenuub" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="icons" href="http://www.github.com/Devenuub" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+      
+    
+    <section class="hidden" id="home"> 
+        <h2>Matvei Cloutier</h2>
+        <img class="img" src="./img/codelogos.gif" alt="">
+        <p>
+            -Aspiring Front End Developer- <br>
+            -Inspired CSS Designer- <br>
+            -GPT Advocate-  <br> 
+            <img class="gpt" src="./img/gpt.gif" alt="">
+        </p>
+    </section>
+
+    <section class="hidden" id="about"> 
+        <h2>Achievements / Careers</h2>
+        <img class="img2" src="./img/dance.gif" alt="">
+        <h3>
+            As an artist, I am always trying to find creative ways to deal with difficult situations.<br><br>
+        </h3>
+            <h3 class="greentext">
+                Click the Animated Images To Learn More about me!
+            </h3> 
+            
+            <br><br>
+            <p>Created and distributed music 
+                <a href="spot.html">
+                    <img class="spot" src="./img/spot.gif" alt="">
+                </a>
+            <br>
+                Flourished as a Driver/Advertiser for a RideShare Company
+                <a href="uber.html"><img class="uber" src="./img/uber.gif" alt=""></a>
+            <br>
+                Demonstrated incredible learning skills through being a chef for 5 years
+                <a href="fabio.html">
+                    <img class="chef" src="./img/chef.gif" alt="">
+                </a>
+            <br>
+            Implimented Chat Based Controls for Stream Based Gameplay 
+            Pokemon Leaf Green Emulator and Python
+            <a href="pkmn.html">
+                <img class="poke" src="./img/poke.gif" alt="">
+            </a>
+            <br>
+        </p>
+    </section>
+
+    <section class="hidden" id="services">
+  <h2>Hire Me!</h2>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-front">
+        <img class="img3" src="./img/FULLSKEL.gif" alt="">
+      </div>
     </div>
   </div>
-    <!--END OF HERO SECTION-->
-
-    
-  <!--About section-->
-  <div class="main" id="about">
-   <div class="main__container">
-    <div class="main__img--container">
-        
-        <div class="main__img--card"><i class="fa-solid fa-leaf fa-4x"></i>DEVENUUB</i></div>  
-    </div>
-    <div class="main__content">
-        <h1>Matvei Cloutier</h1>
-
-        <h2>WEB AND SOFTWARE DEVELOPMENT</h2>
-
-        <p>
-            MY NAME IS MATVEI CLOUIER, I AM A SOUS CHEF TURNED SOFTWARE DEVELOPER AS OF _______. 
-            WELCOME TO MY BLOG! EVERYTHING YOU SEE HERE HAS BEEN INPUT COMPLETELY BY HAND, ALTHOUGH BY TUTORIAL AS WELL
-        </p>
-        <button class="main__btn"><a href="#">SERVICES</a></button>
-    </div>
-</div>
- <!--END OF ABOUT SECTION-->
-
- <!--BEGINING OF SERVICES SECTION-->
- <div class="services" id="services">
-
-    <h1>My Services</h1>
-
-    <div class="services__wrapper">
-
-            <div class="services__card">
-            <h2>Custom Website Design</h2>
-            <p> Template Design Consultation</p>
-            <div class="services__btn"><button>GET STARTED</button></div>
-            </div>    
-                
-            <div class="services__card">
-            <h2>Features and Add-ons</h2>
-            <p>Front End Design Features and Cosmetics</p>
-            <div class="services__btn"><button>GET STARTED</button></div>
-            </div>
-
-            <div class="services__card">
-            <h2>Effects Designs</h2>
-            <p>Visual Effects and Sounds</p>
-            <div class="services__btn"><button>GET STARTED</button></div>
-            </div>    
-
-            <div class="services__card">
-            <h2>Custom Website Design</h2>
-            <p> productivity by 50%!</p>
-            <div class="services__btn"><button>GET STARTED</button></div>
-        </div> 
-    </div>
- </div>
- <!--END OF SERVICES SECTION-->
+  <p>
+    My achievements and career history show discipline, loyalty, and longevity. <br> 
+    I am an incredibly quick study and will continue to prove it time and time again. <br>
+    I believe I have what it takes to bring value to your team and your company.<br><br>
+    Matvei Cloutier<br>
+    devenuub@gmail.com<br>
+    (239) 321 - 0402
+  </p>
+</section>
 
 
-  <!-- FEATURES SECTION -->
-  <div class="main" id="sign-up">
-    <div class="main__container">
-        <div class="main__content">
-            
-            <h1>Join Us!</h1>
-            <h2>DEVENUUB Programmers Blog</h2>
-            <p>Follow me if youre interested in coding principles and more!</p>
-            <button class="main__btn"><a href="#">Sign Up</a></button>
-        </div>
-     <div class="main__img--container">
-         <div class="main__img--card" id="card-2"><i class="fa-solid fa-box fa-9x"></i>DEVENUUB</div>  
-     </div>
-     
- </div>
-  <!-- END OF FEATURES SECTION -->
+ 
 
-  <!-- FOOTER SECTION -->
-<div class="footer__container">
-    <div class="footer__links">
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/sign-up">How It Works</a>
-                <a href="/sign-up">Testimonials</a>
-                <a href="/sign-up">Careers</a>
-                <a href="/sign-up">Terms of Service</a>
-            </div>
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/sign-up">How It Works</a>
-                <a href="/sign-up">Testimonials</a>
-                <a href="/sign-up">Careers</a>
-                <a href="/sign-up">Terms of Service</a>
-            </div>
-        </div>
-
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/sign-up">How It Works</a>
-                <a href="/sign-up">Testimonials</a>
-                <a href="/sign-up">Careers</a>
-                <a href="/sign-up">Terms of Service</a>
-            </div>
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/sign-up">How It Works</a>
-                <a href="/sign-up">Testimonials</a>
-                <a href="/sign-up">Careers</a>
-                <a href="/sign-up">Terms of Service</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="everythingFooter">
-    <section class="social__media">
-        <div class="social__media--wrap">
-            <div class="footer__logo">
-                 <a href="/" id="footer__logo">DEVENUUB</a>
-            </div>
-            <div class="social__icons">
-           
-            <!-- Links Color -->
-            <style>
-                 a { color: #3CA55C; } 
-            </style>
-               
-            <a href="https://www.facebook.com/DeveNuub/" class="social__icons--link"
-            target="_blank">
-            <i class="fab fa-facebook fa-5x"></i>
-            </a>
-
-            <a href="https://www.instagram.com/devenuub/" class="social__icons--link"
-            target="_blank">
-            <i class="fab fa-instagram fa-5x"></i>
-            </a>
-
-            <a href="https://twitter.com/MatveiCloutier" class="social__icons--link"
-            target="_blank">
-            <i class="fab fa-twitter fa-5x"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/matvei-c-892a73243/" class="social__icons--link"
-            target="_blank">
-            <i class="fab fa-linkedin fa-5x"></i>
-            </a> 
-        
-            
-            <p class="website__rights">Ⓒ DEVENUUB 2020. All Rights Reverved</p>
-        </div>
-            
-        </div>
-    </section>
-</div>
-  <!-- END OF FOOTER SECTION  -->
-
-
-
-    <!--BEGINING OF  RUN JS APP I THINK-->
-    <script src="app.js"></script>
-<script type="text/javascript">
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight -
-        window.innerHeight;
-    window.onscroll = function(){
-        let progressHeight = (window.pageYOffset / totalHeight)
-            * 100;
-        progress.style.height = progressHeight + "%";
-    }
-
-</script>
 </body>
 </html>

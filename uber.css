@@ -1,0 +1,79 @@
+/* Styles for larger screens */
+.uber__header {
+  text-align: center;
+}
+
+.utime {
+  text-decoration: underline;
+}
+
+.uber__images {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 350px);
+  gap: 10px;
+}
+
+.uber__images img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.uber__testimonials {
+  padding-left: 2%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 350px);
+  gap: 10px;
+  grid-auto-flow: column; /* Display the items in a single column */
+  overflow: auto; /* Enable horizontal scrolling if needed */
+  margin-bottom: 2%;
+}
+
+.uber__testimonials img {
+  width: 90%;
+  border-radius: 3%;
+}
+
+.testHead {
+  text-align: center;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .utale {
+    /* Reduce left and right margins for smaller screens */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .uber__images {
+    /* Change grid to single column for smaller screens */
+    grid-template-columns: 1fr;
+    gap: 5; /* Remove gap between images to ensure they fit within the screen */
+    overflow-x: scroll; /* Enable horizontal scrolling for images */
+    scroll-snap-type: x mandatory; /* Snap images to the screen while scrolling horizontally */
+  }
+
+  .uber__images img {
+    width: auto; /* Set the images to their original size */
+    max-width: 80%; /* Make sure the images do not exceed the screen width */
+    border-radius: 10px;
+    scroll-snap-align: center; /* Center the images within the screen while scrolling */
+    margin: 0 auto;
+  }
+
+  /* Adjust testimonials for mobile view */
+  .uber__testimonials {
+    grid-template-columns: 1fr; /* Set to a single column */
+    grid-auto-flow: row; /* Change the flow to rows */
+    justify-items: center; /* Center the testimonials horizontally */
+  }
+  
+  .uber__testimonials img {
+    width: 100%; /* Make the images take the full width of the container */
+    max-width: 350px; /* Limit the maximum width for consistency */
+  }
+}

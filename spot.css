@@ -1,0 +1,52 @@
+.spot__header{
+    text-align: center;
+  }
+
+  .spottime{
+    text-decoration: underline;
+  }
+
+  .spottale{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .spot__images {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 350px);
+    gap: 10px;
+  }
+  
+  .spot__images img {
+    width: 100%;
+    border-radius: 10%;
+  }
+
+  .spot__link{
+    text-align: center;    
+}
+
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .spot__header {
+    /* Adjust text alignment for smaller screens */
+    text-align: center;
+  }
+
+  .spottale {
+    /* Reduce left and right margins for smaller screens */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .spot__images {
+    /* Change grid to single column for smaller screens */
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

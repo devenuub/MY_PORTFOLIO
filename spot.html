@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spot.css">
+    <script src="https://kit.fontawesome.com/e8d010676d.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+   
+    <title>THE PORTFOLIO</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container"> 
+            <a href="index.html" id="navbar__logo" ><i class="fa-solid fa-leaf"></i>DEVENUUB<i class="fa-solid fa-leaf"></i></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup-page">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <label for="subject">Subject: <img class="sub" src="./img/sub.gif" alt=""></label>
+                <input type="text" id="subject" name="subject" required autocomplete="off"><br>
+                <label for="email">Email: <img class="ema" src="./img/ema.gif"></label>
+                <input type="email" id="email" name="email" required autocomplete="off"><br>
+                <label for="phone">Phone: <img class="pho" src="./img/pho.gif" alt=""></label>
+                <input type="tel" id="phone" name="phone" required autocomplete="off"><br>
+                <label for="message">Message: <img class="mes" src="./img/mes.gif" alt=""></label>
+                <textarea id="message" name="message" required autocomplete="off"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="spot__header">
+        <h1 class="spotHeader">Accomplished Solo Artist</h1>
+        <h2 class="spottime">5+ Year</h2>
+        <p class="spottale">As an independent Emotional Hip-Hop/Pop artist, I go by the name Sin Lied. My personal experiences have shaped 
+            me as an artist and taught me valuable skills in being a self-starter and running my own business. I aim to connect with listeners 
+            on a deep level through heartfelt music that conveys a range of emotions. Being independent requires proactive promotion, including 
+            social media campaigns and collaborations. Public performances have allowed me to engage with fans and showcase my talent. Running my 
+            own business has taught me time management, financial planning, and networking skills. 
+            Overall, my journey as an artist has allowed me to express myself and gain entrepreneurship experience in the music industry.
+        </p>
+    </div>
+
+    <div class="spot-container">
+        <div class="spot__images">
+            <img  src="./spotimg/SinLied2" alt="">
+            <img  src="./spotimg/SinLied.png" alt="">
+            <img  src="./spotimg/SinLied3" alt="">
+        </div>
+    </div>
+
+    <div class="spot__link">
+        <h1>Play My Music!</h1>
+        <a href="https://open.spotify.com/artist/7jZlEVivrYsbbe6fYp2bhH?si=1vQxlz0lSBKQcs-Z4zyL7w" target="_blank">
+            <img src="./img/spot.gif" alt="">
+        </a>
+    </div>
+    
+</body>
+</html>

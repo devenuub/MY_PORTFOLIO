@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fabio.css">
+    <script src="https://kit.fontawesome.com/e8d010676d.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+   
+    <title>THE PORTFOLIO</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container"> 
+            <a href="index.html" id="navbar__logo" ><i class="fa-solid fa-leaf"></i>DEVENUUB<i class="fa-solid fa-leaf"></i></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup-page">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <label for="subject">Subject: <img class="sub" src="./img/sub.gif" alt=""></label>
+                <input type="text" id="subject" name="subject" required autocomplete="off"><br>
+                <label for="email">Email: <img class="ema" src="./img/ema.gif"></label>
+                <input type="email" id="email" name="email" required autocomplete="off"><br>
+                <label for="phone">Phone: <img class="pho" src="./img/pho.gif" alt=""></label>
+                <input type="tel" id="phone" name="phone" required autocomplete="off"><br>
+                <label for="message">Message: <img class="mes" src="./img/mes.gif" alt=""></label>
+                <textarea id="message" name="message" required autocomplete="off"></textarea><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+    </div>
+
+    <div class="fabio__header">
+        <h1 class="fabioHeader">Accomplished Sous Chef</h1>
+        <h2 class="fabiotime">6+ Years</h2>
+        <p class="fabiotale">As a talented Sous Chef, I have mastered the art of infusing flavor and passion into creating exquisite Italian cuisine. 
+            Every day, I meticulously prepare a medley of scrumptious sauces, succulent meats, and mouthwatering baked 
+            appetizers and entrees, ensuring unmatched consistency and culinary delights for our esteemed customers.
+        </p>
+    </div>
+
+    <div class="fabio-container">
+        <div class="fabio__images">
+            <img src="./fabioimg/fabio1" alt="">
+            <img src="./fabioimg/fabio3" alt="">
+            <img src="./fabioimg/fabio2" alt="">
+        </div>
+    </div>
+
+    <div class="fabio__link">
+        <h1>Dinner at Ristorante Fabio</h1>
+        <a href="https://www.ristorantefabio.com" target="_blank">
+            <img class="chef" src="./img/chef.gif" alt="">
+        </a>
+    </div>
+</body>
+</html>

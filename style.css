@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Prompt&family=Shadows+Into+Light&display=swap');
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    padding: 10;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-top: 10px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transition: all 5s;
+    padding: 3%;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+}
+
+.img {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 300px;
+}
+
+.img2 {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 150px;
+}
+
+.img3 {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 300px;
+}
+
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    max-width: 100%;
+    height: auto;
+  }
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 0vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px; /* Adjust the space between the icons */
+    font-size: 50px; /* Adjust the icon size */
+    text-decoration: none;
+    color: white;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #2e2e2e;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display:flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background: #5A3F37;
+    background: -webkit-linear-gradient(to right, #7bf59f, #008321);
+    background: linear-gradient(to right, #7bf59f, #008321);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center; 
+    list-style: none;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/*Sign up button*/
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #000000;  
+    background: #5A3F37;
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37); 
+    background: linear-gradient(to right, #1c4b2a, #008321);
+    color:#fff;
+    transition: all 0.3s ease;
+
+}
+
+
+.button:hover{
+    background-position: 0%, 100%;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #3ca55c, #3ca55c); 
+}
+
+.button:hover:after{
+    width: 100%;
+    background-position: 0%, 100%;
+    background: linear-gradient(to right, #3ca55c,  #FFFFFF); 
+    transition: left to right 1.35s;
+}
+
+
+.navbar__links:hover{
+    color: #3ca55c;
+    transition: left to right 0.3s ease;
+}
+
+@media screen and (max-width: 960px){
+    *{
+       box-sizing: border-box;
+    }
+
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 960px;
+        padding: 0;
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        opacity: 0; 
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background:#131313;
+    }
+
+    .navbar__menu.active{
+        background:rgb(71, 71, 71)13;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        padding-bottom: 10%;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo{
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn{
+       padding-bottom: 7rem;
+   }
+
+.button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 50px;
+        margin: 0;
+    }
+
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+/* toggles hamburger menu to rotate to X */
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0; 
+    }
+   
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg); 
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg); 
+    }
+    /* Add this CSS to hide the navigation links when the mobile menu is closed */
+.navbar__menu:not(.active) {
+  display: none;
+}
+
+}
+/* Add this CSS to hide the navigation links when the mobile menu is closed */
+
+
+@media screen and (max-width: 600px) {
+  .navbar__container {
+    padding: 0 10px;
+  }
+
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #131313;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar__menu.active {
+    opacity: 1;
+    max-height: 400px; /* Adjust the max-height to accommodate all menu items */
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__links {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  #mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: px;
+    cursor: pointer;
+  }
+
+  .navbar__toggle .bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  /* Title adjustments */
+  .title-container {
+    padding-top: 60px;
+  }
+
+  .title {
+    max-width: 80%;
+    height: auto;
+  }
+
+  /* Animations adjustments */
+  .quote {
+    font-size: 12px;
+  }
+
+  /* Form adjustments */
+  .modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+
+/* END OF NAVBAR */
+
+/* FORM STUFF */
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .modal-content {
+    background-color: #222;
+    zoom: 70%;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    right: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #00ad3a;
+  }
+  
+  /* Styles for the form */
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #00ad3a;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #00ad3a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-group {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .input-group label,
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+  }
+  
+  /* Smaller form styles */
+  @media screen and (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+    }
+  
+    label {
+      font-size: 12px;
+ }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      padding: 6px;
+      font-size: 10px;
+    }
+  }
+  
+  /* Subject line styles */
+  #subject {
+    color: #00ad3a;
+  }
+
+  .sub{
+    width: 40px;
+  }
+  .ema{
+    width: 40px;
+  }
+  .pho{
+    width: 40px;
+  }
+  .mes{
+    width: 55px;
+  }
+  .gpt{
+    width: 30px;
+  }
+
+.spot{
+    width: 20px;
+    
+}
+.uber{
+    width: 25px;
+}
+.chef{
+    width: 25px;
+}
+.poke{
+    width: 80px;
+}
+.anim{
+    width: 25px;
+    height: 25px;
+}
+  
+/* ====links section==== */
+
+.greentext{
+  color: #008321;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
