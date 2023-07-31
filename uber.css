@@ -11,9 +11,11 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(auto-fit, 350px);
   gap: 10px;
+  
 }
+
 
 .uber__images img {
   width: 100%;
@@ -53,8 +55,7 @@
     /* Change grid to single column for smaller screens */
     grid-template-columns: 1fr;
     gap: 5; /* Remove gap between images to ensure they fit within the screen */
-    overflow-x: scroll; /* Enable horizontal scrolling for images */
-    scroll-snap-type: x mandatory; /* Snap images to the screen while scrolling horizontally */
+     /* Snap images to the screen while scrolling horizontally */
   }
 
   .uber__images img {
